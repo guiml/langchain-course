@@ -16,7 +16,7 @@ def main():
     summary_template = """ 
     Given the information {information} about the airline, I want you to create:
     1. A short summary
-    2. Two interesting facts about the airline:
+    2. Two interesting facts about the airline
     """
 
     summary_prompt_template = PromptTemplate(
