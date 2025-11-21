@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 
-
 load_dotenv()
 
 
@@ -28,7 +27,6 @@ def main():
     chain = summary_prompt_template | llm
     response = chain.invoke({"information": information})
     print(response.content)
-
 
 
 if __name__ == "__main__":
